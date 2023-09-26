@@ -1,0 +1,1 @@
+﻿// Todo: move the timer internals into this file instead of cluttering up the main form.
