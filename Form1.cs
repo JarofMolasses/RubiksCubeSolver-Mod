@@ -50,12 +50,11 @@ namespace VirtualRubik
 
         // Recon components  - put this in a class you idiot
         string reconMoves = "";                                                         // stores the raw moves 
-        ConcurrentQueue<TimeSpan> reconIntervals = new ConcurrentQueue<TimeSpan>();     // stores the time delay for each move?        
+        ConcurrentQueue<TimeSpan> reconIntervals = new ConcurrentQueue<TimeSpan>();     // stores the time delay for each move     
         List<string> moveHistory = new List<string>();                                  // list of raw strings
         List<ConcurrentQueue<TimeSpan>> intervalHistory = new List<ConcurrentQueue<TimeSpan>>();
         int reconMoveIndex = 0;                                                         // index of current move in reconstruction
-        int reconMoveTarget = 0;                                                        // target end index - could be larger or smaller then current move index 
-        //int reconStringIndex = 0;                                                     // bruh look at this dude
+        int reconMoveTarget = 0;                                                        // target end index - could be larger or smaller then current move index                                                     
         string[] reconSplit;                                                            // split up into individual moves
         System.Windows.Forms.Timer timer2 = new System.Windows.Forms.Timer();
         bool reverseRecon = false;
@@ -323,7 +322,7 @@ namespace VirtualRubik
 
 
         // Every time a rotation finishes this will fire and check for more moves pushed to the stack.
-        // The stack is inexorably linked to the listbox in the UI. 
+        // The stack is permanently linked to the listbox in the UI. 
         // I can add a second stack for automation, and leave this stack for manual purposes only.
 
         private void RotatingFinished(object sender)
@@ -1580,44 +1579,9 @@ namespace VirtualRubik
             }*/
             trackBar1.Value = oldRotationTicksRecon;
         }
-
-        private void trackBarReconIndex_MouseEnter(object sender, EventArgs e)
-        {
-        }
-
-        private void trackBarReconIndex_Scroll(object sender, EventArgs e)
-        {
-            
-        }
     }
 
     #endregion
-   
-    public class ExRichTextBox : RichTextBox
-    {
-        public ExRichTextBox()
-        {
-            Selectable = true;
-        }
-        const int WM_SETFOCUS = 0x0007;
-        const int WM_KILLFOCUS = 0x0008;
-
-        ///<summary>
-        /// Enables or disables selection highlight. 
-        /// If you set `Selectable` to `false` then the selection highlight
-        /// will be disabled. 
-        /// It's enabled by default.
-        ///</summary>
-        [DefaultValue(true)]
-        public bool Selectable { get; set; }
-        protected override void WndProc(ref Message m)
-        {
-            if (m.Msg == WM_SETFOCUS && !Selectable)
-                m.Msg = WM_KILLFOCUS;
-
-            base.WndProc(ref m);
-        }
-    }
     public static class Extension
     {
         public static void AddContextMenu(this RichTextBox rtb)

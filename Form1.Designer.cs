@@ -79,13 +79,13 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.buttonReconPlay = new System.Windows.Forms.Button();
             this.tableLayoutPanelRecon = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonCloseRecon = new System.Windows.Forms.Button();
             this.textBoxReconScramble = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonCloseRecon = new System.Windows.Forms.Button();
+            this.buttonResetReconAni = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.richTextBoxReconMoves = new System.Windows.Forms.RichTextBox();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.buttonResetReconAni = new System.Windows.Forms.Button();
             this.trackBarReconIndex = new System.Windows.Forms.TrackBar();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -667,7 +667,7 @@
             this.buttonReconPlay.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonReconPlay.Location = new System.Drawing.Point(3, 3);
             this.buttonReconPlay.Name = "buttonReconPlay";
-            this.buttonReconPlay.Size = new System.Drawing.Size(55, 29);
+            this.buttonReconPlay.Size = new System.Drawing.Size(54, 29);
             this.buttonReconPlay.TabIndex = 13;
             this.buttonReconPlay.Text = "Play";
             this.buttonReconPlay.UseVisualStyleBackColor = true;
@@ -681,7 +681,7 @@
             this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.60825F));
             this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 486F));
-            this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
+            this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanelRecon.Controls.Add(this.buttonReconPlay, 0, 0);
             this.tableLayoutPanelRecon.Controls.Add(this.textBoxReconScramble, 3, 0);
             this.tableLayoutPanelRecon.Controls.Add(this.label4, 2, 0);
@@ -695,21 +695,11 @@
             this.tableLayoutPanelRecon.Size = new System.Drawing.Size(810, 35);
             this.tableLayoutPanelRecon.TabIndex = 14;
             // 
-            // buttonCloseRecon
-            // 
-            this.buttonCloseRecon.Location = new System.Drawing.Point(686, 3);
-            this.buttonCloseRecon.Name = "buttonCloseRecon";
-            this.buttonCloseRecon.Size = new System.Drawing.Size(121, 29);
-            this.buttonCloseRecon.TabIndex = 14;
-            this.buttonCloseRecon.Text = "Close reconstruction";
-            this.buttonCloseRecon.UseVisualStyleBackColor = true;
-            this.buttonCloseRecon.Click += new System.EventHandler(this.buttonCloseRecon_Click);
-            // 
             // textBoxReconScramble
             // 
             this.textBoxReconScramble.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxReconScramble.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxReconScramble.Location = new System.Drawing.Point(200, 3);
+            this.textBoxReconScramble.Location = new System.Drawing.Point(199, 3);
             this.textBoxReconScramble.Name = "textBoxReconScramble";
             this.textBoxReconScramble.ReadOnly = true;
             this.textBoxReconScramble.Size = new System.Drawing.Size(480, 29);
@@ -720,11 +710,31 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(134, 11);
+            this.label4.Location = new System.Drawing.Point(133, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 16;
             this.label4.Text = "Scramble:";
+            // 
+            // buttonCloseRecon
+            // 
+            this.buttonCloseRecon.Location = new System.Drawing.Point(685, 3);
+            this.buttonCloseRecon.Name = "buttonCloseRecon";
+            this.buttonCloseRecon.Size = new System.Drawing.Size(121, 29);
+            this.buttonCloseRecon.TabIndex = 14;
+            this.buttonCloseRecon.Text = "Close reconstruction";
+            this.buttonCloseRecon.UseVisualStyleBackColor = true;
+            this.buttonCloseRecon.Click += new System.EventHandler(this.buttonCloseRecon_Click);
+            // 
+            // buttonResetReconAni
+            // 
+            this.buttonResetReconAni.Location = new System.Drawing.Point(63, 3);
+            this.buttonResetReconAni.Name = "buttonResetReconAni";
+            this.buttonResetReconAni.Size = new System.Drawing.Size(64, 29);
+            this.buttonResetReconAni.TabIndex = 17;
+            this.buttonResetReconAni.Text = "Reset";
+            this.buttonResetReconAni.UseVisualStyleBackColor = true;
+            this.buttonResetReconAni.Click += new System.EventHandler(this.buttonResetReconAni_Click);
             // 
             // panel5
             // 
@@ -755,16 +765,6 @@
             this.trackBar1.Size = new System.Drawing.Size(177, 45);
             this.trackBar1.TabIndex = 16;
             // 
-            // buttonResetReconAni
-            // 
-            this.buttonResetReconAni.Location = new System.Drawing.Point(64, 3);
-            this.buttonResetReconAni.Name = "buttonResetReconAni";
-            this.buttonResetReconAni.Size = new System.Drawing.Size(64, 29);
-            this.buttonResetReconAni.TabIndex = 17;
-            this.buttonResetReconAni.Text = "Reset";
-            this.buttonResetReconAni.UseVisualStyleBackColor = true;
-            this.buttonResetReconAni.Click += new System.EventHandler(this.buttonResetReconAni_Click);
-            // 
             // trackBarReconIndex
             // 
             this.trackBarReconIndex.Dock = System.Windows.Forms.DockStyle.Top;
@@ -773,10 +773,8 @@
             this.trackBarReconIndex.Name = "trackBarReconIndex";
             this.trackBarReconIndex.Size = new System.Drawing.Size(810, 45);
             this.trackBarReconIndex.TabIndex = 17;
-            this.trackBarReconIndex.Scroll += new System.EventHandler(this.trackBarReconIndex_Scroll);
             this.trackBarReconIndex.ValueChanged += new System.EventHandler(this.trackBarReconIndex_ValueChanged);
             this.trackBarReconIndex.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackBarReconIndex_MouseDown);
-            this.trackBarReconIndex.MouseEnter += new System.EventHandler(this.trackBarReconIndex_MouseEnter);
             this.trackBarReconIndex.MouseUp += new System.Windows.Forms.MouseEventHandler(this.trackBarReconIndex_MouseUp);
             // 
             // Form1
