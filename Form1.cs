@@ -178,7 +178,7 @@ namespace VirtualRubik
                         }
                         else
                         {
-                            richTextBoxReconMoves.SelectionStart = (reconMoveIndex-1) * 3;
+                            richTextBoxReconMoves.SelectionStart = (reconMoveIndex-1) * 3 < 0? 0: (reconMoveIndex-1)*3;
                             richTextBoxReconMoves.SelectionLength = 3;
                             //richTextBoxReconMoves.SelectionBackColor = Color.MediumSeaGreen;
 

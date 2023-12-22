@@ -681,7 +681,7 @@
             this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.60825F));
             this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 486F));
-            this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableLayoutPanelRecon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanelRecon.Controls.Add(this.buttonReconPlay, 0, 0);
             this.tableLayoutPanelRecon.Controls.Add(this.textBoxReconScramble, 3, 0);
             this.tableLayoutPanelRecon.Controls.Add(this.label4, 2, 0);
@@ -699,7 +699,7 @@
             // 
             this.textBoxReconScramble.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxReconScramble.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxReconScramble.Location = new System.Drawing.Point(199, 3);
+            this.textBoxReconScramble.Location = new System.Drawing.Point(198, 3);
             this.textBoxReconScramble.Name = "textBoxReconScramble";
             this.textBoxReconScramble.ReadOnly = true;
             this.textBoxReconScramble.Size = new System.Drawing.Size(480, 29);
@@ -710,7 +710,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(133, 11);
+            this.label4.Location = new System.Drawing.Point(132, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 16;
@@ -718,7 +718,7 @@
             // 
             // buttonCloseRecon
             // 
-            this.buttonCloseRecon.Location = new System.Drawing.Point(685, 3);
+            this.buttonCloseRecon.Location = new System.Drawing.Point(684, 3);
             this.buttonCloseRecon.Name = "buttonCloseRecon";
             this.buttonCloseRecon.Size = new System.Drawing.Size(121, 29);
             this.buttonCloseRecon.TabIndex = 14;
@@ -730,7 +730,7 @@
             // 
             this.buttonResetReconAni.Location = new System.Drawing.Point(63, 3);
             this.buttonResetReconAni.Name = "buttonResetReconAni";
-            this.buttonResetReconAni.Size = new System.Drawing.Size(64, 29);
+            this.buttonResetReconAni.Size = new System.Drawing.Size(63, 29);
             this.buttonResetReconAni.TabIndex = 17;
             this.buttonResetReconAni.Text = "Reset";
             this.buttonResetReconAni.UseVisualStyleBackColor = true;
