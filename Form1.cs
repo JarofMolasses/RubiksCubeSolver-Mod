@@ -137,7 +137,7 @@ namespace VirtualRubik
             timer2.Interval = 10;
             timer2.Tick += timer2_Tick;
 
-            loadTestHistory();
+            //loadTestHistory();
             richTextBoxReconMoves.AddContextMenu();
         }
 
@@ -1534,8 +1534,8 @@ namespace VirtualRubik
         int oldRotationTicksRecon = 10;
         private void trackBarReconIndex_MouseDown(object sender, MouseEventArgs e)
         {
-            oldRotationTicksRecon = rotationTicksRecon;
-            trackBar1.Value = 0;
+            //oldRotationTicksRecon = rotationTicksRecon;
+            //trackBar1.Value = 0;
         }
 
         private void trackBarReconIndex_MouseUp(object sender, MouseEventArgs e)
@@ -1577,7 +1577,7 @@ namespace VirtualRubik
                     }
                 }
             }*/
-            trackBar1.Value = oldRotationTicksRecon;
+            //trackBar1.Value = oldRotationTicksRecon;
         }
     }
 
